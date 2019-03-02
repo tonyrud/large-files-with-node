@@ -5,8 +5,13 @@
     "main": "index.mjs",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node --experimental-modules index.mjs"
+        "start": "node index.js",
+        "start:backpressure": "node stream-with-backpressure.js",
+        "start:test": "node index-test.js itcont_2018_20070823_20170529.txt"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "progress": "^2.0.3"
+    }
 }
